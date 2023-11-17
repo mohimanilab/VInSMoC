@@ -5,7 +5,7 @@ This repository documents the VInSMoC web application and runs through an exampl
 VInSMoC is a mass spectral search tool that scores query mass spectra against a database of candidate molecules.
 VInSMoC can run in exact mode or variable mode.
 In exact mode VInSMoC matches query spectra to candidate molecules whose masses match the query spectra's precursor m/z.
-In variable mode VInSMoC matches query spectra to candidate molecules whose variants can explain the Δ mass difference.
+In variable mode VInSMoC matches query spectra to candidate molecules whose variants can explain the difference Δ between the precursor mass of spectra and mass of the molecule.
 VInSMoC supports both positive and negative mode spectra.
 
 ## The npanalysis.org server
