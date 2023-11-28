@@ -51,7 +51,7 @@ For VInSMoC we need mass spectral inputs, so select "Mass Spectrum" as your data
 ![data kind](./images/data_kind.png)
 
 We support MGF, mzXML, and mzML inputs, select any such file on your computer and press submit to upload it to our sever.
-In this example we use a mass spectrum file that contains a scan that is a known hit to surugamide D.
+In this example we use a mass spectrum file from the MSV000086287 dataset.
 
 ![selected file](./images/selected_file.png)
 
@@ -79,7 +79,7 @@ Each project has two constituent tables: tasks and data.
 Data is associated to a project by the user that uploaded the data point.
 All public data provided by the developers is automatically available to every project.
 We can see that we have access to the NPAtlas chemical database already.
-However, we do not have access to our surugamide spectrum, so we will associate it to the project using the plus button in the data table.
+However, we do not have access to our spectrum file, so we will associate it to the project using the plus button in the data table.
 
 ![project data plus button](./images/project_data_plus_button.png)
 
@@ -88,7 +88,7 @@ This will create a form where we can select our spectrum from the dropdown and c
 ![project data form](./images/project_data_form.png)
 ![project data form filled](./images/project_data_form_filled.png)
 
-We now see that our surugamide.mzML file is available to this project.
+We now see that our `extract-3_Metal-mix_1mM.mzML` file is available to this project.
 
 ![project page post data](./images/project_page_post_data.png)
 
