@@ -8,6 +8,8 @@ In exact mode VInSMoC matches query spectra to candidate molecules whose masses 
 In variable mode VInSMoC matches query spectra to candidate molecules whose variants can explain the difference Δ between the precursor mass of spectra and mass of the molecule.
 VInSMoC supports both positive and negative mode spectra.
 
+There is a demo video available in `demo_video/vinsmoc_demo.mov`.
+
 ## The npanalysis.org server
 VInSMoC, among other tools, is hosted at <https://run.npanalysis.org>. 
 
