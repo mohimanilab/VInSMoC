@@ -1,0 +1,70 @@
+{
+  "rules": [
+    [
+      {
+        "atom1": "C",
+        "atom2": "N",
+        "bond_type": "Single"
+      },
+      [
+        {
+          "Symmetric": -1.00727647
+        }
+      ]
+    ],
+    [
+      {
+        "atom1": "N",
+        "atom2": "C",
+        "bond_type": "Single"
+      },
+      [
+        {
+          "Symmetric": 1.00727647
+        }
+      ]
+    ],
+    [
+      {
+        "atom1": "C",
+        "atom2": "O",
+        "bond_type": "Single"
+      },
+      [
+        {
+          "Symmetric": -1.00727647
+        }
+      ]
+    ],
+    [
+      {
+        "atom1": "O",
+        "atom2": "C",
+        "bond_type": "Single"
+      },
+      [
+        {
+          "Symmetric": 1.00727647
+        }
+      ]
+    ],
+    [
+      {
+        "atom1": "C",
+        "atom2": "C",
+        "bond_type": "Single"
+      },
+      [
+        {
+          "Symmetric": 1.00727647
+        },
+        {
+          "Symmetric": -1.00727647
+        }
+      ]
+    ]
+  ],
+  "max_depth": 2,
+  "twocut_allowed": true,
+  "twocuts": null
+}

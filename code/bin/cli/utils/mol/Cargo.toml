@@ -1,0 +1,21 @@
+[package]
+name = "mol"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.42"
+clap = { version = "3.2.7", features = ["derive"] }
+mimalloc = { version = "0.1.26", default-features = false, optional = true }
+petgraph = "0.6.0"
+rayon = "1.5.1"
+serde_json = "1.0.68"
+
+chemical_db = { path = "../../../../lib/chemical_db" }
+molecule = { path = "../../../../lib/molecule", features = ["inchi", "draw"] }
+paths = { path = "../../../../lib/paths" }
+
+[features]
+default = ["mimalloc"]

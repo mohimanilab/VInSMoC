@@ -1,0 +1,17 @@
+[package]
+name = "rxn"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.42"
+clap = { version = "3.2.7", features = ["derive"] }
+mimalloc = { version = "0.1.26", default-features = false, optional = true }
+
+molecule = { path = "../../../../lib/molecule" }
+modification = { path = "../../../../lib/modification" }
+
+[features]
+default = ["mimalloc"]

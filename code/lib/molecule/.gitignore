@@ -1,0 +1,5 @@
+/target
+Cargo.lock
+molecule.so
+*.smi
+INCHI-1-SRC/

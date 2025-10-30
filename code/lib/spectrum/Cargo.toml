@@ -1,0 +1,52 @@
+[package]
+name = "spectrum"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nom = "6.1.2"
+itertools = "0.10.0"
+smallvec = { version = "1.6.1", features = ["serde"] }
+serde = { version = "1.0", features = [ "derive" ] }
+quick-xml = { version = "0.22", features = [ "serialize" ] }
+flate2 = "1.0"
+base64 = "0.13"
+roxmltree = "0.10.1"
+rustc-hash = "1.1.0"
+xmlparser = "0.13.3"
+thiserror = "^1.0.25"
+ordered-float = { version = "2.8", features = ["std", "rkyv"]}
+clap = { version = "3.2.7", features = ["derive"] }
+sha2 = "0.10.2"
+base16ct = { version = "0.1.1", features = ["alloc"] }
+either = "1.8.0"
+rkyv = { version = "0.7.15", features = ["validation"] }
+csv = "1.1.6"
+serde_json = "1.0.78"
+plotters = { version = "0.3.4", default_features = false, features = ["svg_backend"] }
+plotters-backend = "0.3.4"
+log = "=0.4.14"
+
+molecule = { path = "../molecule" }
+paths = { path = "../paths" }
+balloon = { path = "../balloon" }
+petgraph = "0.6.2"
+
+[dev-dependencies]
+approx = "0.5.0"
+criterion = "0.3"
+tempfile = "3.3.0"
+
+[[bench]]
+name = "index_ingest"
+harness = false
+
+[[bench]]
+name = "index_query"
+harness = false
+
+[[bench]]
+name = "index_score"
+harness = false

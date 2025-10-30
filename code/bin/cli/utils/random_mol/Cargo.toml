@@ -1,0 +1,18 @@
+[package]
+name = "random_mol"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.42"
+clap = { version = "3.2.7", features = ["derive"] }
+mimalloc = { version = "0.1.26", default-features = false, optional = true }
+petgraph = "0.6.0"
+rand = { version = "0.8.3", features = ["alloc"] }
+
+molecule = { path = "../../../../lib/molecule" }
+
+[features]
+default = ["mimalloc"]

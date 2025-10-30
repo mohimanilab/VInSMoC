@@ -1,0 +1,40 @@
+[package]
+name = "chemical_db"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+itertools = "0.10.1"
+serde = { version = "1.0", features = ["derive"]}
+rustc-hash = "1.1.0"
+csv = "1"
+rayon = "1.5.1"
+indicatif = { version = "0.16.2", optional = true }
+thiserror = "^1.0.25"
+rkyv = "0.7.15"
+memmap2 = "0.3.1"
+clap = { version = "3.2.7", features = ["derive"] }
+
+molecule = { path = "../molecule", features = ["inchi"]}
+paths = { path = "../paths" }
+memchr = "2.4.1"
+
+[dev-dependencies]
+bincode = "1.3.3"
+criterion = "0.3"
+ordered-float = "2.8.0"
+spectrum = { path = "../spectrum" }
+
+[[bench]]
+name = "sort_db"
+harness = false
+
+[[bench]]
+name = "read_db"
+harness = false
+
+[[bench]]
+name = "match_candidates"
+harness = false

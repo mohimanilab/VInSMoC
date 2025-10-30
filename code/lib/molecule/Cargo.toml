@@ -1,0 +1,66 @@
+[package]
+name = "molecule"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "molecule"
+
+[dependencies]
+nom = "6.1.2"
+petgraph = { version = "0.6", features = ["serde-1", "stable_graph"] }
+serde = { version = "1.0", features = ["derive"] }
+rustc-hash = "1.1.0"
+itertools = "0.10.0"
+ordered-float = { version = "2.10.0", features = ["serde"] }
+coordgen = { version = "0.2.2", optional = true }
+rand = "0.8.3"
+thiserror = "^1.0.25"
+libinchi-sys = { version = "0.1.0", optional = true }
+smallvec = "1.7.0"
+regex = "1.1.0"
+indexmap = "1.7.0"
+schemars = "0.8.8"
+
+parsers = { path = "../parsers" }
+constants = { path = "../constants" }
+learning = { path = "../learning" }
+
+[dev-dependencies]
+criterion = "0.3"
+iai = "0.1"
+approx = "0.4.0"
+
+[build-dependencies]
+bindgen = "0.58.1"
+cc = { version = "1.0", features = ["parallel"] }
+
+[features]
+inchi = ["libinchi-sys"]
+draw = ["coordgen"]
+
+[[bench]]
+name = "parse_smiles"
+harness = false
+
+[[bench]]
+name = "to_smiles"
+harness = false
+
+[[bench]]
+name = "to_smiles_iai"
+harness = false
+
+[[bench]]
+name = "ecfp"
+harness = false
+
+[[bench]]
+name = "ecfp_iai"
+harness = false
+
+[[bin]]
+name = "get-mass"
+path = "src/bin/get_mass.rs"

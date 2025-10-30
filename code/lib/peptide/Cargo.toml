@@ -1,0 +1,28 @@
+[package]
+name = "peptide"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nom = "6.1.2"
+rustc-hash = "1.1.0"
+ndarray = "0.15.3"
+rand = { version = "0.8.3", optional = true }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "^1.0.25"
+itertools = "0.10.0"
+
+molecule = { path = "../molecule" }
+constants = {path = "../constants"}
+learning = {path = "../learning"}
+modification = {path = "../modification"}
+parsers = {path = "../parsers"}
+
+[dependencies.petgraph]
+version = "0.6"
+features = ["serde-1"]
+
+[dev-dependencies]
+approx = "0.4.0"

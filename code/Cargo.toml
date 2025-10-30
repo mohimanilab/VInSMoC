@@ -1,0 +1,41 @@
+[workspace]
+members = [
+    # general shared libs
+    "lib/balloon",
+    "lib/chemical_db",
+    "lib/constants",
+    "lib/draw",
+    "lib/learning",
+    "lib/mcmc",
+    "lib/modification",
+    "lib/molecule",
+    "lib/parsers",
+    "lib/paths",
+    "lib/peptide",
+    "lib/spectrum",
+    "lib/tuplemap",
+
+    # command line binaries
+    "bin/cli/utils/acc",
+    "bin/cli/utils/atom",
+    "bin/cli/utils/chem_db",
+    "bin/cli/utils/modify",
+    "bin/cli/utils/mol",
+    "bin/cli/utils/rxn",
+    "bin/cli/utils/spec",
+    "bin/cli/utils/spectral_sim",
+    "bin/cli/utils/pep",
+    "bin/cli/utils/random_mol",
+]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[profile.bench]
+lto = true
+codegen-units = 1
+
+[profile.test.package.dereplicate]
+opt-level = 2
+debug-assertions = true

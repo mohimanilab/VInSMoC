@@ -1,0 +1,17 @@
+spectrum_file	scan	retention_time	precursor_mz	mol_idx	mol_name	inchikey14	mol_mass	mass_error	adduct	charge	score
+test_files/gnps.mgf	1		866.633	1	test_mol1	GRJSOZDXIUZXEW	865.62522724	0.0004963078000628229	[M+H]+	1	21.0
+test_files/gnps.mgf	1		866.633	1	test_mol1	GRJSOZDXIUZXEW	865.62522724	865.6262198556001	[M+2H]++	2	22.0
+test_files/gnps.mgf	1		866.633	4	test_mol4	VCAGNEUDNVLWPT	849.63031262	15.99541092779998	[M+H]+	1	10.0
+test_files/gnps.mgf	1		866.633	4	test_mol4	VCAGNEUDNVLWPT	849.63031262	881.6211344756	[M+2H]++	2	10.0
+test_files/gnps.mgf	1		866.633	3	test_mol3	ZRWKFXOGNFQPMY	514.31552044	351.3102031078	[M+H]+	1	2.0
+test_files/gnps.mgf	1		866.633	6	test_mol6	CRQZWNMPCIFJKX	1061.60488572	-195.97916217220006	[M+H]+	1	1.0
+test_files/gnps.mgf	1		866.633	6	test_mol6	CRQZWNMPCIFJKX	1061.60488572	669.6465613756	[M+2H]++	2	4.0
+test_files/gnps.mgf	1		866.633	2	test_mol2	DEUCVOIWOGPZGS	512.29987038	353.3258531678	[M+H]+	1	4.0
+test_files/gnps.mgf	1		866.633	0	test_mol0	GWGKNTICBPKKKW	729.4101491	136.2155744478	[M+H]+	1	2.0
+test_files/gnps.mgf	1		866.633	7	test_mol7	QURRTAYEASAREY	609.4101491	256.2155744478	[M+H]+	1	12.0
+test_files/gnps.mgf	1		866.633	18	test_mol18	QWSYKJZSJYRUSS	411.2620879	454.36363564780004	[M+H]+	1	2.0
+test_files/gnps.mgf	1		866.633	9	test_mol9	OHBCWVJHZZYAHJ	726.31036738	139.31535616780002	[M+H]+	1	6.0
+test_files/gnps.mgf	1		866.633	12	test_mol12	GRVRRAOIXXYICO	395.26717328	470.3585502678	[M+H]+	1	4.0
+test_files/gnps.mgf	1		866.633	17	test_mol17	HQEBGENSMXBRMP	671.42579916	194.19992438780002	[M+H]+	1	8.0
+test_files/gnps.mgf	1		866.633	16	test_mol16	GKWSTXDESFGCFI	808.30546884	57.32025470780002	[M+H]+	1	5.0
+test_files/gnps.mgf	1		866.633	16	test_mol16	GKWSTXDESFGCFI	808.30546884	922.9459782556	[M+2H]++	2	5.0
